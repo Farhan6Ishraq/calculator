@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 *
@@ -15,18 +15,127 @@ html {
 body {
     min-height: 100%;
     /* line-height: 1.6rem; */
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(128, 128, 0); */
+    /* background-color:rgba(0, 0, 0); */
+    background-color: rgba(245, 245, 220);
 }
 
 img {
     max-width: 100%;
 }
 
+h1 {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 2.5rem;
+    color: rgba(210, 180, 140);
+}
+
 .calculator {
-    
+    /* border: 3px solid rgba(0, 0, 0); */
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgba(210, 180, 140);
+    border-radius: 8px;
 }
 
 button {
+    font-size: 1.6rem;
+    margin: 0.5rem;
     padding: 1.6rem;
+    width: 120px;
+    border: none;
+    height: 105px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(245, 245, 220);
+    border-radius: 8px;
 }
+
+.screen {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: white;
+    padding: 1.6rem;
+    margin: 0.5rem;
+    grid-area: 1 / span 4;
+    height: 150px;
+    /* background-color: rgba(0, 0, 128); */
+    background-color: rgba(0, 0, 0);
+    /* background-color: rgba(128, 128, 0); */
+}
+
+.item1 {
+    grid-area: 2 / 1;
+}
+
+.item2 {
+    grid-area: 2 / 2;
+}
+
+.item3 {
+    grid-area: 2 / 3;
+}
+
+.item4 {
+    grid-area: 3 / 1;
+}
+
+.item5 {
+    grid-area: 3 / 2;
+}
+
+.item6 {
+    grid-area: 3 / 3;
+}
+
+.item7 {
+    grid-area: 4 / 1;
+}
+
+.item8 {
+    grid-area: 4 / 2;
+}
+
+.item9 {
+    grid-area: 4 / 3;
+}
+
+.item10 {
+    grid-area: 5 / 2;
+}
+
+/* addition */
+.item11 {
+    grid-area: 2 / 4;
+}
+
+/* substraction */
+.item12 {
+    grid-area: 3 / 4;
+}
+
+/* multiplication */
+.item13 {
+    grid-area: 4 / 4;
+}
+
+/* division */
+.item14 {
+    grid-area: 5 / 4;
+}
+
+/* clear */
+.item15 {
+    grid-area: 5 / 1;
+}
+
+
+
+
 
