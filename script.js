@@ -7,12 +7,14 @@ const clear = document.querySelector(".clear");
 const equal = document.querySelector(".equal");
 const screen = document.querySelector(".screen");
 
+//inputs numbers on screen when clicked
 numbers.forEach((number) => {
   number.addEventListener("click", (e) => {
     return (screen.textContent += number.textContent);
   });
 });
 
+//inputs operator on screen when clicked
 operators.forEach((operator) => {
   operator.addEventListener("click", (e) => {
     let operatorsArr = ["+", "-", "*", "/"];
@@ -29,10 +31,12 @@ operators.forEach((operator) => {
   });
 });
 
+//clears the screen
 clear.addEventListener('click', () => {
     screen.textContent = '';
 });
 
+//takes in two values and an operator and calls a function based on the operator
 equal.addEventListener("click", () => {
   let operatorsArr = ["+", "-", "*", "/"];
   let strLength = screen.textContent.length;
@@ -57,6 +61,7 @@ equal.addEventListener("click", () => {
   }
 });
 
+// operator functions
 function sum(a, b) {
   a = parseInt(a);
   b = parseInt(b);
